@@ -7,7 +7,9 @@ var express = require("express"),
     LocalStrategy = require("passport-local"),
     passportLocalMongoose = require("passport-local-mongoose")
     
-mongoose.connect("mongodb://localhost:27017/personalfile", {useNewUrlParser: true});    
+//mongoose.connect("mongodb://localhost:27017/personalfile", {useNewUrlParser: true});  
+mongoose.connect("mongodb://Zheng:Min651015@ds147734.mlab.com:47734/personal_file", {useNewUrlParser: true});  
+
 app.use(require("express-session")({
     secret:"Ranggener is a chungener",
     resave: false,
