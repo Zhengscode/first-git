@@ -7,7 +7,7 @@ var express = require("express"),
     Comment = require("./models/comment"),
     LocalStrategy = require("passport-local"),
     passportLocalMongoose = require("passport-local-mongoose")
-//    seedDB = require("./seeds")
+    seedDB = require("./seeds")
     
 //mongoose.connect("mongodb://localhost:27017/personalfile", {useNewUrlParser: true});  
 mongoose.connect("mongodb://Zheng:Min651015@ds147734.mlab.com:47734/personal_file", {useNewUrlParser: true});  
@@ -91,18 +91,6 @@ app.get("/garden/new", isLoggedIn, function(req, res) {
     res.render("comments/new"), {currentUser: req.user.username};
 })
 
-app.post("/garden", isLoggedIn, function(req, res) {
-    Comment.create(req.body.comment), function(err, comment){
-        if(err){
-            console.log(err);
-        } else{
-            comment.author.id=req.user._id;
-            comment.author.username=req.user.username;
-            comment.save();
-            
-        }
-    }
-})
 
 app.get("/logout", function(req, res) {
     req.logout();
