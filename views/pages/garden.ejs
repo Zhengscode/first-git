@@ -1,5 +1,17 @@
 <% include ../partials/header %>
-<div id="garden">
-    <h1 id="garden-text">Garden is coming very soon!</br>Go to <a href="/">homepage</a> to see other features</h1>
+<div id="garden" class="container">
+    <h1 id="garden-text">So the garden is open now!</h1>
+    <a class="btn btn-dark" href="/garden/new">Leave a message</a>
+    
+    <% comments.forEach(function(comment){ %>
+        <div class="img-thumbnail">
+            <img src="<%= comment.image %>">
+            <div class="caption">
+                <h4><%= comment.text %></h4>
+                <h4><%= comment.author.username %></h4>
+            </div>
+        <div>
+        
+    <% }) %>
 </div>
 <% include ../partials/footer %>
