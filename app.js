@@ -6,8 +6,8 @@ var express = require("express"),
     User = require("./models/user"),
     Comment = require("./models/comment"),
     LocalStrategy = require("passport-local"),
-    passportLocalMongoose = require("passport-local-mongoose"),
-    seedDB = require("./seeds")
+    passportLocalMongoose = require("passport-local-mongoose")
+//    seedDB = require("./seeds")
     
 //mongoose.connect("mongodb://localhost:27017/personalfile", {useNewUrlParser: true});  
 mongoose.connect("mongodb://Zheng:Min651015@ds147734.mlab.com:47734/personal_file", {useNewUrlParser: true});  
