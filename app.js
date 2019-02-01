@@ -4,12 +4,10 @@ var express = require("express"),
     bodyParser = require("body-parser"),
     passport = require("passport"),
     User = require("./models/user"),
-    Comment = require("./models/comment"),
     LocalStrategy = require("passport-local"),
     passportLocalMongoose = require("passport-local-mongoose")
-    seedDB = require("./seeds")
     
-//mongoose.connect("mongodb://localhost:27017/personalfile", {useNewUrlParser: true});  
+//mongoose.connect("process.env.DATABASEURL", {useNewUrlParser: true});  
 mongoose.connect("mongodb://Zheng:Min651015@ds147734.mlab.com:47734/personal_file", {useNewUrlParser: true});  
 
 app.use(require("express-session")({
@@ -22,7 +20,6 @@ app.use(passport.session());
 app.use(bodyParser.urlencoded({extended:true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
-seedDB();
 
 
 passport.use(new LocalStrategy(User.authenticate()));
@@ -37,6 +34,9 @@ app.use(function(req, res, next){
 app.get("/", function(req, res){
     res.render("pages/home");
 });
+app.get("/loveapp", function(req, res) {
+    res.render("pages/love");
+})
 
 app.get("/skills", function(req, res){
     res.render("pages/skills");
@@ -78,19 +78,8 @@ app.get("/wonderland", function(req, res) {
 });
 
 app.get("/garden", isLoggedIn, function(req, res) {
-    res.render(Comment.find({}, function(err, allComments){
-        if(err){
-            console.log(err);
-        } else{
-            res.render("pages/garden",{comments:allComments});
-        }
-        })
-    )});
-
-app.get("/garden/new", isLoggedIn, function(req, res) {
-    res.render("comments/new"), {currentUser: req.user.username};
-})
-
+    res.render("pages/garden", {currentUser: req.user.username});
+});
 
 app.get("/logout", function(req, res) {
     req.logout();

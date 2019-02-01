@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">   
+	<link rel="stylesheet" type="text/css" href="stylesheets/love.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+</head>
+<body>
+	<div id="background">
+		<div class="container" id="show">
+			<h1 id="title">Make a few options <br> Get closer to your true love</h1>
+			<h4>Hey dear! Do you have a gf/bf? Do you want one?<br> In this page I will ask you to give your opinions on different pictures. <br>Based on your options I will lead you to a closer place of finding your true love!</h4>
+			<button class="btn btn-danger showButtonGirl" id="girl">I want a girlfriend</button>
+			<button class="btn btn-dark showButtonBoy"  id="boy">I want a boyfriend</button>
+		</div>
+	<div class="container" id="hiddenGirl">
+		<h1 id="title">Make a few options <br> Get closer to your true love</h1>
+	<div class="row">		
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			<p id="myPhoto"><img id="image"src="https://images.unsplash.com/photo-1486989813814-da4a10a6fc7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1180&q=80" class="img-thumbnail"><br></p>
+			<p id="name">name</p>
+			<form name="form" id="form">
+			<input type="radio" name="love"> Dislike
+            <input type="radio" name="love"> Rather Dislike
+            <input type="radio" name="love"> Rather Like
+            <input type="radio" name="love"> Big Love<br>
+            </form>
+            <button onclick="changeforgirl()" id="hello" class="btn btn-danger">View next <i class="fas fa-heart"></i></button>
+		</div>
+		<div class="col-md-2"></div>
+	</div>
+    </div>
+    <div class="container" id="hiddenBoy">
+		<h1 id="title">Make a few options <br> Get closer to your true love</h1>
+	<div class="row">		
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			<p id="myPhoto"><img id="image"src="https://images.unsplash.com/photo-1486989813814-da4a10a6fc7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1180&q=80" class="img-thumbnail"><br></p>
+			<p id="name">name</p>
+			<form name="form" id="form">
+			<input type="radio" name="love"> Dislike
+            <input type="radio" name="love"> Rather Dislike
+            <input type="radio" name="love"> Rather Like
+            <input type="radio" name="love"> Big Love<br>
+            </form>
+            <button onclick="changeforboy()" id="hello" class="btn btn-danger">View next <i class="fas fa-heart"></i></button>
+		</div>
+		<div class="col-md-2"></div>
+	</div>
+    </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="stylesheets/love.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>	
+</body>
+</html>
