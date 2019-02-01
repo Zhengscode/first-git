@@ -10,27 +10,28 @@
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
 </head>
 <body>
+	<body>
 	<div id="background">
 		<div class="container" id="show">
 			<h1 id="title">Make a few options <br> Get closer to your true love</h1>
 			<h4>Hey dear! Do you have a gf/bf? Do you want one?<br> In this page I will ask you to give your opinions on different pictures. <br>Based on your options I will lead you to a closer place of finding your true love!</h4>
-			<button class="btn btn-danger showButtonGirl" id="girl">I want a girlfriend</button>
-			<button class="btn btn-dark showButtonBoy"  id="boy">I want a boyfriend</button>
+			<button class="btn btn-danger showButtonGirl" id="girl">I want a boyfriend</button>
+			<button class="btn btn-dark showButtonBoy"  id="boy">I want a girlfriend</button>
 		</div>
 	<div class="container" id="hiddenGirl">
 		<h1 id="title">Make a few options <br> Get closer to your true love</h1>
 	<div class="row">		
 		<div class="col-md-2"></div>
 		<div class="col-md-8">
-			<p id="myPhoto"><img id="image"src="https://images.unsplash.com/photo-1486989813814-da4a10a6fc7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1180&q=80" class="img-thumbnail"><br></p>
-			<p id="name">name</p>
+			<p id="myPhoto"><img id="boyimage"src="https://images.unsplash.com/photo-1486989813814-da4a10a6fc7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1180&q=80" class="img-thumbnail"><br></p>
+			<p id="boyname">name</p>
 			<form name="form" id="form">
 			<input type="radio" name="love"> Dislike
             <input type="radio" name="love"> Rather Dislike
             <input type="radio" name="love"> Rather Like
             <input type="radio" name="love"> Big Love<br>
             </form>
-            <button onclick="changeforgirl()" id="hello" class="btn btn-danger">View next <i class="fas fa-heart"></i></button>
+            <button onclick="changeforgirl()" id="girlsubmit" class="btn btn-danger">View next <i class="fas fa-heart"></i></button>
 		</div>
 		<div class="col-md-2"></div>
 	</div>
@@ -40,15 +41,15 @@
 	<div class="row">		
 		<div class="col-md-2"></div>
 		<div class="col-md-8">
-			<p id="myPhoto"><img id="image"src="https://images.unsplash.com/photo-1486989813814-da4a10a6fc7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1180&q=80" class="img-thumbnail"><br></p>
-			<p id="name">name</p>
+			<p id="myPhoto"><img id="girlimage"src="https://images.unsplash.com/photo-1486989813814-da4a10a6fc7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1180&q=80" class="img-thumbnail"><br></p>
+			<p id="girlname">name</p>
 			<form name="form" id="form">
 			<input type="radio" name="love"> Dislike
             <input type="radio" name="love"> Rather Dislike
             <input type="radio" name="love"> Rather Like
             <input type="radio" name="love"> Big Love<br>
             </form>
-            <button onclick="changeforboy()" id="hello" class="btn btn-danger">View next <i class="fas fa-heart"></i></button>
+            <button onclick="changeforboy()" id="boysubmit" class="btn btn-danger">View next <i class="fas fa-heart"></i></button>
 		</div>
 		<div class="col-md-2"></div>
 	</div>

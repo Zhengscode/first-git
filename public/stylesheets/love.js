@@ -21,32 +21,43 @@ $(document).ready(function () {
     });
 });
 
+//get girls photo
 function getGirlPhoto(){
 	$.getJSON(jsonUrlGirl
-		, dataType, imgReplacer)
+		, dataType, imgReplacergirl)
 }
 
-function imgReplacer(json){
-	var img = $("#image");
+function imgReplacergirl(json){
+	var img = $("#girlimage");
 	img.attr("src", json.results[0].picture.large);
 }
 
+//get boys photo
 function getBoyPhoto(){
 	$.getJSON(jsonUrlBoy
-		, dataType, imgReplacer)
+		, dataType, imgReplacerboy)
 }
 
-function imgReplacer(json){
-	var img = $("#image");
+function imgReplacerboy(json){
+	var img = $("#boyimage");
 	img.attr("src", json.results[0].picture.large);
 }
 
-function getName(){
-	$.getJSON(jsonUrlGirl, dataType, nameReplacer)
+//get girl name
+function getGirlName(){
+	$.getJSON(jsonUrlGirl, dataType, nameReplacerGirl)
 }
 
-function nameReplacer(json){
-	var name = $("#name");
+function nameReplacerGirl(json){
+	var name = $("#girlname");
+	name.html(json.results[0].name.first);
+}
+//get boys name
+function getBoyName(){
+	$.getJSON(jsonUrlBoy, dataType, nameReplacerBoy)
+}
+function nameReplacerBoy(json){
+	var name = $("#boyname");
 	name.html(json.results[0].name.first);
 }
 
@@ -56,9 +67,18 @@ function uncheck(){
 
 function clickTimer(){
 	$(document).ready(function () {
-    $("#hello").click(function () {
+    $("#girlsubmit").click(function () {
         var count = $(this).data("count") || 0;
-        if(count == 100){
+        if(count == 50){
+            alert("Wow! seems like you really tried hard to find some one! You should start more seriously rather than playing web games!");
+            window.location.href = "https://www.mysinglefriend.com/s/";
+        }
+        $(this).data("count", ++count);
+        console.log(count);
+    });
+    $("#boysubmit").click(function () {
+        var count = $(this).data("count") || 0;
+        if(count == 50){
             alert("Wow! seems like you really tried hard to find some one! You should start more seriously rather than playing web games!");
             window.location.href = "https://www.mysinglefriend.com/s/";
         }
@@ -75,7 +95,7 @@ function changeforgirl(){
 	if(jQuery('#form input[type=radio]:checked').length) {
 	    clickTimer();
 		getBoyPhoto();
-	    getName();
+	    getBoyName();
 	    uncheck();
 	} else{
 		alert("we need to know your feeling about this picture!")
@@ -87,7 +107,7 @@ function changeforboy(){
 	if(jQuery('#form input[type=radio]:checked').length) {
 	    clickTimer();
 		getGirlPhoto();
-	    getName();
+	    getGirlName();
 	    uncheck();
 	} else{
 		alert("we need to know your feeling about this picture!")

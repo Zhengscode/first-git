@@ -25,7 +25,12 @@ h4{
 }
 
 
-#image{
+#girlimage{
+	width: 30%;
+	height: auto;
+}
+
+#boyimage{
 	width: 30%;
 	height: auto;
 }
