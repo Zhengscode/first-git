@@ -58,7 +58,7 @@ function clickTimer(){
 	$(document).ready(function () {
     $("#hello").click(function () {
         var count = $(this).data("count") || 0;
-        if(count == 10){
+        if(count == 100){
             alert("Wow! seems like you really tried hard to find some one! You should start more seriously rather than playing web games!");
             window.location.href = "https://www.mysinglefriend.com/s/";
         }
