@@ -70,7 +70,7 @@ function clickTimer(){
     $("#girlsubmit").click(function () {
         var count = $(this).data("count") || 0;
         if(count == 50){
-            alert("Wow! seems like you really tried hard to find some one! You should start more seriously rather than playing web games!");
+            alert("Wow! seems like you really tried hard to find some one! You should start more seriously rather than playing meaningless web games!");
             window.location.href = "https://www.mysinglefriend.com/s/";
         }
         $(this).data("count", ++count);
@@ -79,7 +79,7 @@ function clickTimer(){
     $("#boysubmit").click(function () {
         var count = $(this).data("count") || 0;
         if(count == 50){
-            alert("Wow! seems like you really tried hard to find some one! You should start more seriously rather than playing web games!");
+            alert("Wow! seems like you really tried hard to find some one! You should start more seriously rather than playing meaningless web games!");
             window.location.href = "https://www.mysinglefriend.com/s/";
         }
         $(this).data("count", ++count);

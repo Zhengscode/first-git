@@ -11,6 +11,15 @@ h4{
 	padding-top: 3%;
 	padding-bottom: 5%;
 }
+
+#boyname{
+    font-family: 'Great-Vibes', cursive;
+    color: #222;
+}
+#girlname{
+    font-family: 'Great-Vibes', cursive;
+    color: pink;
+}
 .col-md-8{
 	text-align: center;
 }
