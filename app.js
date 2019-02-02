@@ -78,7 +78,7 @@ app.get("/wonderland", function(req, res) {
 });
 
 app.get("/garden", isLoggedIn, function(req, res) {
-    res.render("pages/garden", {currentUser: req.user.username});
+    res.render("pages/garden");
 });
 
 app.get("/logout", function(req, res) {

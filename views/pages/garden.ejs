@@ -1,16 +1,38 @@
 <% include ../partials/header %>
-<div id="garden" class="container">
-    <h1 id="garden-text">So the garden is open now!</h1>
-    <a class="btn btn-dark" href="/garden/new">Leave a message</a>
-    <% comments.forEach(function(comment){ %>
-        <div class="img-thumbnail">
-            <img src="<%= comment.image %>">
-            <div class="caption">
-                <h4><%= comment.text %></h4>
-                <h4><%= comment.author.username %></h4>
-            </div>
-        <div>
-        
-    <% }) %>
+<div id="gardenback" >
+<div class="container">
+<div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1507277197361-0a59220ee08d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" class="card-img-top">
+        <div class="card-body garden-text">
+          <h2 class="card-title">Love App</h2>
+          <p class="card-text">A little app helping you to be more clear to your love-life roadmap. If there is a chance, why not?</p>
+          <a  class="btn btn-danger" href="/loveapp">Begin the trip for Love</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1484557594760-42c1ac0c092e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=999&q=80" class="card-img-top">
+        <div class="card-body garden-text">
+          <h2 class="card-title">Blog(Not yet open)</h2>
+          <p class="card-text">This is a place you can share almost everything! Post your blog and let others give you feedback</p>
+          <a  class="btn btn-dark" href="/" role="button">Back to home</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1533601017-dc61895e03c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" class="card-img-top">
+        <div class="card-body garden-text">
+          <h2 class="card-title">Next Surprise</h2>
+          <p class="card-text">To be continued<br>...</p>
+          <a  class="btn btn-dark" href="/" role="button">Back to home</a>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
 </div>
 <% include ../partials/footer %>
