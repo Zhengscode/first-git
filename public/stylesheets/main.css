@@ -1,21 +1,14 @@
 .front {
-	width: 100%;
-	height: 100vh;
+	height: 95vh;
 	background-image: url(https://images.unsplash.com/photo-1484977975800-86a4c7bd7235?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
 	background-size:cover;
-	background-position: 0rem -20rem;
-	background-repeat: no-repeat;
+	background-position: center bottom;
 	text-align: center;
 }
 
-.back {
-	width: 100%;
-	height: 100vh;
-	background-image: url(https://images.unsplash.com/photo-1496862831786-3fdc3d8747be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
-	background-size:cover;
-	background-repeat: no-repeat;
-	text-align: center;
-}
+
+
+
 #garden {
 	width: 100%;
 	height: 100vh;
@@ -40,7 +33,7 @@
 }
 
 .title2 {
-	padding-top: 10%;
+	padding-top: 8rem;
 	font-family: 'Lobster', cursive;
 }
 
@@ -67,29 +60,20 @@
 	font-family: 'Indie Flower', cursive;
 }
 
-
-.end {
-	width: 100%;
-	height: 100vh;
-	background-image: url(https://images.unsplash.com/photo-1482939192751-e87ecdf49d20?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80);
-	background-size:cover;
-	background-repeat: no-repeat;
-	text-align: center;
-}
-
 .continued{
     padding-top: 20%;
     font-size: 400%;    
     font-family: 'Lobster', cursive;
 }
 
-.spring{
-	width: 100%;
-	height: 120vh;
-	background-image: url(https://images.unsplash.com/photo-1519096094653-66258f8f0480?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80);
-	background-size:cover;
-	background-repeat: no-repeat;
+
+#knowme {
+	margin-bottom: 2rem;
 }
+div .card{
+	margin-bottom: 2rem;
+}
+
 blockquote {
     font-family: 'Noto Serif SC', serif;
     text-align: center;
