@@ -2,11 +2,11 @@
 
 
 <div class="container">
-    <header class="jumbotron">
+    <header id="blogheader" class="jumbotron">
         <div class="container">
             <h1>Welcome to Blog!</h1>
             <p>Read my blogs Or create your own blog here!</p>
-            <p><a href="blogs/new" class="btn btn-dark">Add New Blog</a></p>
+            <p><a href="blogs/new" class="btn btn-success">Add New Blog</a></p>
         </div>
     </header>
     
@@ -18,7 +18,7 @@
                     <h4><%= blog.name %></h4>
                 </div>
                 <p>
-                    <a href="/blogs/<%= blog._id %>" class="btn btn-dark">More info</a>
+                    <a href="/blogs/<%= blog._id %>" class="btn btn-warning">More info</a>
                 </p>
             </div>
        <% }); %>
