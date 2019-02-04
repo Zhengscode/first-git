@@ -121,8 +121,12 @@
           <i class="fas fa-user-plus"></i>
         </a>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <% if(!currentUser){ %>
           <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal">Signup/Login</a>
+          <% } else { %>
+          <a class="dropdown-item" href="#">User: <%= currentUser.username %></a>
           <a class="dropdown-item" href="/logout">Logout</a>
+          <% } %>
         </div>
       </li>
     </ul>
