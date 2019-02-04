@@ -9,7 +9,7 @@ router.get("/", function(req, res){
     res.render("pages/home");
 });
 
-router.get("/loverouter", function(req, res) {
+router.get("/loveapp", function(req, res) {
     res.render("pages/love");
 });
 
